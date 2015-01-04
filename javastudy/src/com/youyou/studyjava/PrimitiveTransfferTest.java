@@ -1,14 +1,14 @@
 package com.youyou.studyjava;
 
 public class PrimitiveTransfferTest {
-	public static void swap(int a, int b)
+	public static void swap(int c, int e)
 	{
 		int tmp;
-		tmp = a;
-		a = b;
-		b = tmp;
+		tmp =c;
+		c =e;
+		e = tmp;
 		
-		System.out.println("swap方法里，a 的值是"+ a + "; b 的值是" + b );
+	//	System.out.println("swap方法里，a 的值是"+ a + "; b 的值是" + b );
 	}
 	
 	public static void main(String[] args){
