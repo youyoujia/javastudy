@@ -1,7 +1,7 @@
 package com.youyou.studyjava;
 
 
-class Animals{
+abstract class Animals{
 	private void beat(){
 		System.out.println("ĞÄÔàÌø¶¯¡£¡£¡£");
 	}
@@ -28,8 +28,9 @@ public class InheritTest {
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		Animals a  = new Bird();
 		Bird b = new Bird();
-		b.breath();
+		a.breath();
 		b.fly();
 		Wolfs w = new Wolfs();
 		w.breath();
