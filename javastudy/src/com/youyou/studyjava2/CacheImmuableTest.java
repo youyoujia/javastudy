@@ -1,4 +1,4 @@
-package com.youyou.studyjava;
+package com.youyou.studyjava2;
 //这个有点难理解
 class CacheImmutable{
 	private static int MAX_SIZE = 10;
