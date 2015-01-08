@@ -1,5 +1,5 @@
 package com.youyou.studyjava;
-
+//这个有点难理解
 class CacheImmutable{
 	private static int MAX_SIZE = 10;
 	//使用数组来缓存已有的实例
