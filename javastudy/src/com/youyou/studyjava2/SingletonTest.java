@@ -4,9 +4,11 @@ class Singleton{
 	private static Singleton instance;
 	private Singleton(){}
 	
-	public static Singleton getInstance(){
+	public static synchronized Singleton getInstance(){
 		if(instance == null){
+
 			instance = new Singleton();
+			
 		}
 		return instance;
 	}
@@ -17,8 +19,9 @@ public class SingletonTest {
 		// TODO Auto-generated method stub
 		Singleton s1 = Singleton.getInstance();
 		Singleton s2 = Singleton.getInstance();
-		
+	   //	Singleton singleton  = new Singleton();
 		System.out.println(s1 == s2);
+		
 	}
 
 }
