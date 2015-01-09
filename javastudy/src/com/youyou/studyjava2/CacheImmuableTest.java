@@ -9,7 +9,7 @@ class CacheImmutable{
 	private static int pos = 0;
 	private final String name;
 	
-	private CacheImmutable(String name){
+	public CacheImmutable(String name){
 		this.name = name;
 	}
 	
@@ -59,7 +59,9 @@ public class CacheImmuableTest {
 		// TODO Auto-generated method stub
 		CacheImmutable c1 = CacheImmutable.valueOf("hello");
 		CacheImmutable c2 = CacheImmutable.valueOf("hello");
+		CacheImmutable c3 =new CacheImmutable("hello");
 		System.out.println(c1 == c2);
+		System.err.println(c1.equals(c3));
 	}
 
 }

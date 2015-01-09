@@ -34,7 +34,7 @@ public class Address {
 		}
 		return false;
 	}
-	
+	//  adrress(1 2).hashcode=1+2*31     address(1,2)
 	public int hashCode(){
 		return detail.hashCode() + postCode.hashCode() * 31;
 	}
